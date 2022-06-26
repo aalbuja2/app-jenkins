@@ -1,10 +1,10 @@
 FROM node:14-alpine
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
+RUN mkdir -p /home/ubuntu/app/node_modules && chown -R node:node /home/ubuntu/app
 
-WORKDIR /home/node/app
+WORKDIR /home/ubuntu/app
 
-#COPY package*.json ./
+COPY package*.json ./
 
 USER node
 
